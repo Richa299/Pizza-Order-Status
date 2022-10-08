@@ -1,0 +1,117 @@
+.input-group{
+	margin: auto;
+	width: 50vw;
+}
+body{
+	background-color: thistle;
+}
+.lower{
+	margin:auto;
+	width: 60vw;
+}
+.order-status{
+	display: block;
+	color: black;
+	margin:20px auto;
+	font-family: 'Times New Roman', Times, serif;
+	pointer-events: none;
+	border: 2px solid darkgoldenrod;
+}
+.order-title{
+	/* position: absolute; */
+    /* top: 200%;  */
+    /* right: 50%; */
+    /* transform: translate(50%,-50%); */
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 2em;
+    font-weight: 700;
+    color: #A52A2A;
+	height: 3rem;
+    text-shadow: 1px 1px 1px #000000,
+        1px 2px 1px #070707,
+        1px 3px 1px #070707,
+        1px 4px 1px #070707,
+        1px 5px 1px #070707,
+        1px 6px 1px #070707,
+        1px 7px 1px #070707,
+        1px 8px 1px #070707,
+        1px 9px 1px #070707,
+        1px 10px 1px #070707,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+	text-align: center;
+}
+.buttons-group{
+	/* background-color: #A52A2A; */
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-radius: 9px;
+	width: 40vw;
+	margin: auto;
+}
+.buttons-group button{
+	width: 40vw;
+	font-size: 20px;
+}
+
+.execute{
+	/* border-radius: 50% !important; */
+	border-radius: 0px 10px 10px 0px;
+	border: 5px solid rgba(165, 42, 42, 0.301) ;
+	background-color: #f5f82c;
+  /* border: none; */
+  color: black;
+  /* padding: 20px; */
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  /* margin-left: 200px; */
+}
+.order-id{
+	/*  margin-right: 20px; */
+	height: 3rem;
+border-radius: 10px 0px 0px 10px !important;
+}
+.lower{
+	background-color: #966919;
+	border-radius: 200px 0px 200px 0px;
+	margin-bottom: 2rem;
+	
+}
+.form-control:focus{
+	box-shadow: none;
+	border: 5px solid #966919 ;
+	/* background-color: #f5f82c; */
+}
+.form-control{
+	border: 5px solid #A52A2A;
+}
+@media screen and (min-width: 695px) and (max-width: 976px) {
+	.lower{
+		border-radius: 30px 30px 30px 30px;
+		width: 70vw;
+	}
+	.buttons-group{
+width: 60vw;
+	}
+	.buttons-group button{
+width: 60vw;
+	}
+}
+@media screen and (max-width: 695px) {
+	.lower{
+		border-radius: 30px 30px 30px 30px;
+		width: 90vw;
+	}
+	.buttons-group{
+width: 80vw;
+	}
+	.buttons-group button{
+width: 80vw;
+	}
+}
