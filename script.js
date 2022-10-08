@@ -97,6 +97,64 @@ const packageReceivedAtCounter=()=>{
           },2000)
     })
 }
+const final_parcel=()=>{
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            document.getElementById("final").style.backgroundColor="#008000"
+        document.getElementById("final").style.color="white"
+            resolve()
+          },1000)
+    })
+}
+const alert_message=()=>{
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            // console.log("counter");
+            alert("Hey there!! Your Pizza is ready..");
+            resolve()
+          },1000)
+    })
+}
+const empty=()=>{
+    return new Promise((resolve, reject)=>{
+        setTimeout(()=>{
+            document.getElementById("form-value").value=''
+                document.getElementById("order-placed").style.backgroundColor="white"
+                document.getElementById("order-placed").style.color="black"
+            
+                document.getElementById("chef").style.backgroundColor="white"
+                document.getElementById("chef").style.color="black"
+            
+                document.getElementById("pizz-sauce").style.backgroundColor="white"
+                document.getElementById("pizz-sauce").style.color="black"
+            
+                document.getElementById("frst-layer").style.backgroundColor="white"
+                document.getElementById("frst-layer").style.color="black"
+            
+                document.getElementById("toppings").style.backgroundColor="white"
+                document.getElementById("toppings").style.color="black"
+            
+                document.getElementById("second").style.backgroundColor="white"
+                document.getElementById("second").style.color="black"
+            
+                document.getElementById("pizz-baked").style.backgroundColor="white"
+                document.getElementById("pizz-baked").style.color="black"
+            
+                document.getElementById("Oregano").style.backgroundColor="white"
+                document.getElementById("Oregano").style.color="black"
+            
+                document.getElementById("counter").style.backgroundColor="white"
+                document.getElementById("counter").style.color="black"
+            
+                
+                document.getElementById("final").style.backgroundColor="white"
+                document.getElementById("final").style.color="black"
+           
+            resolve()
+          },1000)
+    })
+}
+
 chefReceived()
 .then(pizzaSauceAdded)
 .then(firstLayerOfCheezeAdded)
@@ -105,12 +163,44 @@ chefReceived()
 .then(pizzaBaked)
 .then(oreganoAddedAndPacked)
 .then(packageReceivedAtCounter)
-.then(()=>{
-    document.getElementById("final").style.backgroundColor="#008000"
-    document.getElementById("final").style.color="white"
-    alert("Hey there!! Your Pizza is ready.." 
-    );
-})
+.then(final_parcel)
+.then(alert_message)
+.then(empty)
+// .then(()=>{
+//     alert("Hey there!! Your Pizza is ready..");
+//     document.getElementById("form-value").value=''
+//     document.getElementById("order-placed").style.backgroundColor="white"
+//     document.getElementById("order-placed").style.color="black"
+
+//     document.getElementById("chef").style.backgroundColor="white"
+//     document.getElementById("chef").style.color="black"
+
+//     document.getElementById("pizz-sauce").style.backgroundColor="white"
+//     document.getElementById("pizz-sauce").style.color="black"
+
+//     document.getElementById("frst-layer").style.backgroundColor="white"
+//     document.getElementById("frst-layer").style.color="black"
+
+//     document.getElementById("toppings").style.backgroundColor="white"
+//     document.getElementById("toppings").style.color="black"
+
+//     document.getElementById("second").style.backgroundColor="white"
+//     document.getElementById("second").style.color="black"
+
+//     document.getElementById("pizz-baked").style.backgroundColor="white"
+//     document.getElementById("pizz-baked").style.color="black"
+
+//     document.getElementById("Oregano").style.backgroundColor="white"
+//     document.getElementById("Oregano").style.color="black"
+
+//     document.getElementById("counter").style.backgroundColor="white"
+//     document.getElementById("counter").style.color="black"
+
+    
+//     document.getElementById("final").style.backgroundColor="white"
+//     document.getElementById("final").style.color="black"
+
+// })
 }
 }
 
